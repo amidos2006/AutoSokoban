@@ -314,7 +314,7 @@ class State:
         return False
     
     def checkOutside(self, x, y):
-        return x < 0 or y < 0 or x > len(self.solid[0]) - 1 or y > len(self.solid)
+        return x < 0 or y < 0 or x > len(self.solid[0]) - 1 or y > len(self.solid) - 1
 
     def checkTargetLocation(self, x, y):
         for t in self.targets:
